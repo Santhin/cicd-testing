@@ -28,7 +28,7 @@ jobs:
         export GREN_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
         npm run overrideChangelog
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
+      uses: peter-evans/create-pull-request@v6
       with:
         commit-message: update changelog
         title: Update Changelog
